@@ -1,0 +1,281 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap');
+
+* {
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'Lato';
+}
+
+header {
+    position: fixed;
+    top:0;
+    left:0;
+    width: 100%;
+    box-shadow: 1px 1px 8px #9DB2BF;
+    padding:20px 60px;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1;
+    background-color: #fff;
+}
+
+.logo {
+    font-size: 1.5em;
+    color:#0A4D68;
+    user-select: none;
+    display: flex;
+    margin:0px 0px 8px 0px;
+}
+
+.logo .firstname {
+    color:#0A4D68;
+    left:0;
+}
+
+.logo .lastname {
+    margin-left:8px;
+    color: #088395;
+    opacity: 60%;
+}
+
+.navigation a {
+    position: relative;
+    font-size: 1.1em;
+    color: #0A4D68;
+    text-decoration: none;
+    font-weight: 550;
+    margin-left:50px;
+}
+
+.navigation a::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    border-radius: 4px;
+    background-color: #0A4D68;
+    left: 0;
+    bottom: -5px;
+    transform: scaleX(0);
+    transition: transform .2s;
+    transform-origin: right;
+}
+
+.navigation a:hover::after {
+    transform-origin: left;
+    transform: scaleX(1);
+}
+
+.btn-login{
+    margin-left: 33px;
+    width: 100px;
+    height: 45px;
+    border-radius: 12px;
+    background: transparent;
+    outline: none;
+    border:2px solid #0A4D68;
+    color:#0A4D68;
+    font-size: 1.1em;
+    cursor: pointer;
+    padding: 10px;
+    transition: .3s;
+}
+
+.btn-login:hover{
+    color: #fff;
+    background-color: #0A4D68;
+}
+
+section{
+    display: flex;
+    margin-bottom: 25px;
+    padding:50px;
+    justify-content: center;
+    align-items: center;
+}
+
+.gambar {
+    position: relative;
+}
+
+.gambar img {
+    align-self: center;
+}
+
+.gambar span svg {
+    position: absolute;
+    bottom:0;
+    z-index:-10;
+    top:22px;
+    left: 0;
+    transform: translateX(-220px);
+}
+
+.kolom {
+    margin-top: 180px;
+    padding:90px;
+}
+
+article{
+    line-height: 25px;
+    font-size: 18px;
+    font-family: 'Lato';
+    font-weight: 400;
+    opacity: 60%;
+    margin-top: 20px;
+    margin-bottom:30px;
+}
+
+address {
+    margin-bottom: 10px;
+    font-size: 18px;
+    font-family: 'Lato';
+    font-weight: 400;
+    opacity: 50%;
+}
+
+address hr {
+    margin-top:7px;
+    border-bottom: 1px solid black;
+    opacity: 20%;
+}
+
+address a {
+    opacity: 60%;
+    color:#0A4D68;
+    text-decoration: none;
+}
+
+address a:hover {
+    text-decoration: underline;
+}
+
+span {
+    color:#088395;
+    font-size: 25px;
+}
+
+article a {
+    color: #088395;
+    text-decoration: none;
+}
+
+article a:hover{
+    text-decoration: underline;
+}
+
+.title {
+    margin-bottom: 22px;
+}
+
+.title h2 {
+    font-size:35px;
+    font-weight:bold;
+    color: #088395;
+    bottom:0;
+}
+
+.title b {
+    font-size:16px;
+    font-weight:bold;
+    color: #0A4D68;
+    opacity: 60%;
+}
+
+button {
+    width: 160px;
+    height: 50px;
+    font-size: 18px;
+    color: #088395;
+    margin-top: 12px;
+    background:transparent;
+    border-radius:25px;
+    outline: none;
+    border: 2px solid #088395;
+    cursor: pointer;
+    transition: .2s;
+}
+
+button:hover{
+    background-color: #088395;
+    color:#fff;
+}
+
+.btn-2 {
+    width: 180px;
+    height: 50px;
+}
+
+.icon {
+    margin-top:10px;
+    display: flex;
+    flex-direction: row;
+}
+
+.icon i {
+    margin: 10px 0 10px 5px;
+    color: #088395;
+    margin-right: 6px;
+    transition: .2s;
+}
+
+.icon a i:hover{
+    color: #16aec5;
+}
+
+.skill-me {
+    margin-top: 30px;
+    accent-color: #088395;
+}
+
+.skill-me label {
+    color: #0A4D68;
+    font-size: 18px;
+    opacity: 80%;
+}
+
+.skill-me progress {
+    width: 750px;
+    height: 50px;
+    opacity: 60%;
+}
+
+.design {
+    margin-bottom: 25px;
+}
+
+.programming {
+    margin-bottom: 25px;
+}
+
+footer {
+    display: flex;
+    background-color: #EEEEEE;
+    width: 100%;
+    height: 250px;
+    justify-content: center;
+    align-items: center;
+    color:#cfcece;
+    font-size: 16px;
+    padding: 25px;
+    margin: 25px;
+}
+
+.content-footer h2 {
+    text-align: center;
+    top:15px;
+    margin-bottom: 8px;
+}
+
+p #pembuat {
+    font-size: 16px;
+    color: #969393;
+    opacity: 80%;
+}
+
+p #pembuat:hover{
+   text-decoration: underline;
+   cursor: pointer;
+}
